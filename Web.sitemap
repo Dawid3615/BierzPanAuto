@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.aspx" title="Strona Główna"  description="Strona główna firmy Bierz Pan Auto">
+		<siteMapNode url="~/AddCar.aspx" title="Dodaj samochód" description="Strona Panelu administratora do dodawania samochodów" />
+		<siteMapNode url="~/AddClass.aspx" title="Dodaj klasę" description="Strona Panelu administratora do dodawania klas samochodów" />
+		<siteMapNode url="~/AddColor.aspx" title="Dodaj kolor" description="Strona Panelu administratora do dodawania kolorów samochodów" />
+		<siteMapNode url="~/AddGarage.aspx" title="Dodaj garażowanie" description="Strona Panelu administratora do dodawania garażowania samochodów" />
+		<siteMapNode url="~/AddGeneration.aspx" title="Dodaj generację" description="Strona Panelu administratora do dodawania generacji modelów samochodów" />
+		<siteMapNode url="~/AddManufacturer.aspx" title="Dodaj markę" description="Strona Panelu administratora do dodawania marek samochodów" />
+		<siteMapNode url="~/AddModel.aspx" title="Dodaj model" description="Strona Panelu administratora do dodawania modeli samochodów" />
+		<siteMapNode url="~/AdminHome.aspx" title="Panel administratora" description="Strona głowna panelu administratora" />
+		<siteMapNode url="~/Cars.aspx" title="Nasza flota" description="Strona z samochodami znajdującymi się w naszej ofercie" />
+		<siteMapNode url="~/CarView.aspx" title="Podgląd samochodu" description="Strona do wyświetlania wybranego samochodu z floty" />
+		<siteMapNode url="~/ForgotPassword.aspx" title="Zapomniałeś hasła" description="Strona do odzyskiwania hasła" />
+		<siteMapNode url="~/Payment.aspx" title="Płatności" description="Strona do płatności" />
+		<siteMapNode url="~/RecoverPassword.aspx" title="Odzyskiwanie hasła" description="Strona do resetowania hasła" />
+		<siteMapNode url="~/SignIn.aspx" title="Zaloguj się" description="Strona do logowania użytkownika" />
+		<siteMapNode url="~/SignUp.aspx" title="Zarejestruj się" description="Strona do rejestrowania użytkownika" />
+		<siteMapNode url="~/Take.aspx" title="Zamówienie" description="Strona do wyświetlania listy zamówień" />
+		<siteMapNode url="~/UserHome.aspx" title="Panel użytkownika" description="Strona głowna panelu użytkownika" />
+	</siteMapNode>
+</siteMap>

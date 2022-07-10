@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BierzPanAuto.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+        <!-- Meta Tags start -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <link rel="icon" type="image/gif" href="img/img_logo.gif" />
+        <!-- Meta Tags end -->
+        <!-- CSS start -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/_custom.css" rel="stylesheet" />
+        <link href="css/dark-mode.css" rel="stylesheet" />
+        <!-- CSS end -->
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	                    <div class="container-fluid">
+		                    <a class="navbar-brand" href="Default.aspx">
+			                    <img src="img/img_logo.gif" alt="" width="32" height="32" class="d-inline-block align-top" />
+			                    Bierz Pan Auto
+		                    </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="AdminHome.aspx">Strona Główna</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">O Nas</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Zarządzaj
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="AddCar.aspx">Dodaj samochód</a></li>
+                                            <li><hr class="dropdown-divider" /></li>
+                                            <li><h6 class="dropdown-header">Zarządzanie podstawowe</h6></li>
+                                            <li><hr class="dropdown-divider" /></li>
+                                            <li><a class="dropdown-item" href="AddManufacturer.aspx">Dodaj markę</a></li>
+                                            <li><a class="dropdown-item" href="AddModel.aspx">Dodaj model</a></li>
+                                            <li><a class="dropdown-item" href="AddGeneration.aspx">Dodaj generację</a></li>
+                                            <li><a class="dropdown-item" href="AddColor.aspx">Dodaj kolor</a></li>
+                                            <li><a class="dropdown-item" href="AddClass.aspx">Dodaj klasę</a></li>
+                                            <li><a class="dropdown-item" href="AddTier.aspx">Dodaj poziom</a></li>
+                                            <li><a class="dropdown-item" href="AddGarage.aspx">Dodaj garażowanie</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li>
+                                        <asp:Button ID="btnAdminSignOut" runat="server" Text="Wyloguj Administratora" CssClass="btn btn-sm btn-outline-secondary nav-link" OnClick="btnAdminSignOut_Click" />
+                                    </li>
+                                </ul>
+                                <div class="form-check form-switch d-flex">
+                                    <input class="form-check-input me-2" type="checkbox" id="darkMode" />
+                                    <label class="form-check-label me-2" for="darkMode">Tryb ciemny</label>
+                                </div>
+                            </div>
+	                    </div>
+                    </nav>
+                </header>
+                <main>
+                    <div class="container">
+                        <div>
+                            <asp:ContentPlaceHolder id="ContentPlaceHolderAdmin" runat="server">
+        
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <hr />
+                    <div class="container">
+                        <p class="float-end"><a href="#">&uarr; Powrót do góry</a></p>
+                        <p>&copy; 2020 Dawid Sęk &middot; <a href="Default.aspx">Strona Główna</a> &middot; <a href="#">O Nas</a> &middot; <a href="#">Kontakt</a> &middot; <a href="Cars.aspx">Samochody</a> &middot; <span id="clock" class="clock" onload="showTime()"></span></p>
+                    </div>
+                </footer>
+            </div>
+        </form>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/tippy-bundle.umd.min.js"></script>
+        <script src="js/_custom.js"></script>
+        <script src="js/dark-mode.js"></script>
+        <script>showTime();</script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿.default-page-center {
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    /*color: #212529;*/
+}
+
+.CarName {
+    text-transform: uppercase;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+}
+
+.lst-validation {
+    list-style: none;
+}
+
+.lst-validation li {
+    padding: 5px;
+    font-size: 13px;
+    visibility: visible;
+    transition: all linear 0.1s;
+}
+
+.clock {
+    font-size: 1rem;
+    letter-spacing: 7px;
+    display: inline-block;
+}

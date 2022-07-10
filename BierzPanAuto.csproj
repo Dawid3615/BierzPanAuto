@@ -1,0 +1,536 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8B309D1-B503-4535-BA83-9064F6FC7321}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BierzPanAuto</RootNamespace>
+    <AssemblyName>BierzPanAuto</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44385</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddCar.aspx" />
+    <Content Include="AddClass.aspx" />
+    <Content Include="AddColor.aspx" />
+    <Content Include="AddGarage.aspx" />
+    <Content Include="AddGeneration.aspx" />
+    <Content Include="AddManufacturer.aspx" />
+    <Content Include="AddModel.aspx" />
+    <Content Include="AddTier.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="Cars.aspx" />
+    <Content Include="CarView.aspx" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-grid.rtl.css" />
+    <Content Include="css\bootstrap-grid.rtl.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap-reboot.rtl.css" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="css\bootstrap-utilities.css" />
+    <Content Include="css\bootstrap-utilities.min.css" />
+    <Content Include="css\bootstrap-utilities.rtl.css" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.rtl.css" />
+    <Content Include="css\bootstrap.rtl.min.css" />
+    <Content Include="css\dark-mode.css" />
+    <Content Include="css\_custom.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPasswword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\CarImages\10\Aston Martin DB901.jpg" />
+    <Content Include="img\CarImages\10\Aston Martin DB902.jpg" />
+    <Content Include="img\CarImages\10\Aston Martin DB903.jpg" />
+    <Content Include="img\CarImages\10\Aston Martin DB904.jpg" />
+    <Content Include="img\CarImages\10\Aston Martin DB905.jpg" />
+    <Content Include="img\CarImages\10\Aston Martin DB906.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB901.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB902.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB903.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB904.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB905.jpg" />
+    <Content Include="img\CarImages\11\Aston Martin DB906.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro01.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro02.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro03.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro04.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro05.jpg" />
+    <Content Include="img\CarImages\12\Audi A3 3.2 quattro06.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro01.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro02.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro03.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro04.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro05.jpg" />
+    <Content Include="img\CarImages\13\Audi A4 3.2 FSI quattro06.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro01.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro02.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro03.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro04.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro05.jpg" />
+    <Content Include="img\CarImages\14\Audi TT 3.2 quattro06.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS01.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS02.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS03.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS04.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS05.jpg" />
+    <Content Include="img\CarImages\15\Cadillac CTS06.jpg" />
+    <Content Include="img\carousel\01.png" />
+    <Content Include="img\carousel\02.png" />
+    <Content Include="img\carousel\03.png" />
+    <Content Include="img\CAR_CLASS_EXOTIC.png" />
+    <Content Include="img\CAR_CLASS_MUSCLE.png" />
+    <Content Include="img\CAR_CLASS_TUNER.png" />
+    <Content Include="img\img_logo.gif" />
+    <Content Include="img\ManufacturerImages\abarth.png" />
+    <Content Include="img\ManufacturerImages\acura.png" />
+    <Content Include="img\ManufacturerImages\ac_cars.png" />
+    <Content Include="img\ManufacturerImages\alfa_romeo.png" />
+    <Content Include="img\ManufacturerImages\alpina.png" />
+    <Content Include="img\ManufacturerImages\alpine.png" />
+    <Content Include="img\ManufacturerImages\alumi_craft.png" />
+    <Content Include="img\ManufacturerImages\amc.png" />
+    <Content Include="img\ManufacturerImages\apollo.png" />
+    <Content Include="img\ManufacturerImages\ariel.png" />
+    <Content Include="img\ManufacturerImages\ascari.png" />
+    <Content Include="img\ManufacturerImages\aston_martin.png" />
+    <Content Include="img\ManufacturerImages\ats.png" />
+    <Content Include="img\ManufacturerImages\audi.png" />
+    <Content Include="img\ManufacturerImages\austin.png" />
+    <Content Include="img\ManufacturerImages\austin_healey.png" />
+    <Content Include="img\ManufacturerImages\auto_union.png" />
+    <Content Include="img\ManufacturerImages\bac.png" />
+    <Content Include="img\ManufacturerImages\baldwin.png" />
+    <Content Include="img\ManufacturerImages\beck_kustoms.png" />
+    <Content Include="img\ManufacturerImages\bentley.png" />
+    <Content Include="img\ManufacturerImages\bertone.png" />
+    <Content Include="img\ManufacturerImages\bmw.png" />
+    <Content Include="img\ManufacturerImages\bowler.png" />
+    <Content Include="img\ManufacturerImages\brabham.png" />
+    <Content Include="img\ManufacturerImages\bugatti.png" />
+    <Content Include="img\ManufacturerImages\buick.png" />
+    <Content Include="img\ManufacturerImages\cadillac.png" />
+    <Content Include="img\ManufacturerImages\caparo.png" />
+    <Content Include="img\ManufacturerImages\carbon_motors.png" />
+    <Content Include="img\ManufacturerImages\caterham.png" />
+    <Content Include="img\ManufacturerImages\chaprral.png" />
+    <Content Include="img\ManufacturerImages\chevrolet.png" />
+    <Content Include="img\ManufacturerImages\chrysler.png" />
+    <Content Include="img\ManufacturerImages\citroen.png" />
+    <Content Include="img\ManufacturerImages\daihatsu.png" />
+    <Content Include="img\ManufacturerImages\datsun.png" />
+    <Content Include="img\ManufacturerImages\delorean.png" />
+    <Content Include="img\ManufacturerImages\devon.png" />
+    <Content Include="img\ManufacturerImages\dodge.png" />
+    <Content Include="img\ManufacturerImages\donkervoort.png" />
+    <Content Include="img\ManufacturerImages\eagle.png" />
+    <Content Include="img\ManufacturerImages\eagle_weslake.png" />
+    <Content Include="img\ManufacturerImages\ferrari.png" />
+    <Content Include="img\ManufacturerImages\fiat.png" />
+    <Content Include="img\ManufacturerImages\ford.png" />
+    <Content Include="img\ManufacturerImages\gmc.png" />
+    <Content Include="img\ManufacturerImages\gumpert.png" />
+    <Content Include="img\ManufacturerImages\hennessey.png" />
+    <Content Include="img\ManufacturerImages\holden.png" />
+    <Content Include="img\ManufacturerImages\honda.png" />
+    <Content Include="img\ManufacturerImages\hsv.png" />
+    <Content Include="img\ManufacturerImages\hudson.png" />
+    <Content Include="img\ManufacturerImages\hummer.png" />
+    <Content Include="img\ManufacturerImages\hyundai.png" />
+    <Content Include="img\ManufacturerImages\infiniti.png" />
+    <Content Include="img\ManufacturerImages\isdera.png" />
+    <Content Include="img\ManufacturerImages\isuzu.png" />
+    <Content Include="img\ManufacturerImages\italdesign.png" />
+    <Content Include="img\ManufacturerImages\jaguar.png" />
+    <Content Include="img\ManufacturerImages\jeep.png" />
+    <Content Include="img\ManufacturerImages\kia.png" />
+    <Content Include="img\ManufacturerImages\koenigsegg.png" />
+    <Content Include="img\ManufacturerImages\ktm.png" />
+    <Content Include="img\ManufacturerImages\lamborghini.png" />
+    <Content Include="img\ManufacturerImages\lancia.png" />
+    <Content Include="img\ManufacturerImages\land_rover.png" />
+    <Content Include="img\ManufacturerImages\lexus.png" />
+    <Content Include="img\ManufacturerImages\lincoln.png" />
+    <Content Include="img\ManufacturerImages\lister.png" />
+    <Content Include="img\ManufacturerImages\local_motors.png" />
+    <Content Include="img\ManufacturerImages\lotus.png" />
+    <Content Include="img\ManufacturerImages\marussia_motors.png" />
+    <Content Include="img\ManufacturerImages\maserati.png" />
+    <Content Include="img\ManufacturerImages\maybach.png" />
+    <Content Include="img\ManufacturerImages\mazda.png" />
+    <Content Include="img\ManufacturerImages\mclaren.png" />
+    <Content Include="img\ManufacturerImages\mercedes_benz.png" />
+    <Content Include="img\ManufacturerImages\mercury.png" />
+    <Content Include="img\ManufacturerImages\merkur.png" />
+    <Content Include="img\ManufacturerImages\mg.png" />
+    <Content Include="img\ManufacturerImages\mini.png" />
+    <Content Include="img\ManufacturerImages\mitsubishi.png" />
+    <Content Include="img\ManufacturerImages\morgan.png" />
+    <Content Include="img\ManufacturerImages\morris.png" />
+    <Content Include="img\ManufacturerImages\mosler.png" />
+    <Content Include="img\ManufacturerImages\nissan.png" />
+    <Content Include="img\ManufacturerImages\noble.png" />
+    <Content Include="img\ManufacturerImages\oldsmobile.png" />
+    <Content Include="img\ManufacturerImages\opel.png" />
+    <Content Include="img\ManufacturerImages\pagani.png" />
+    <Content Include="img\ManufacturerImages\panoz.png" />
+    <Content Include="img\ManufacturerImages\peel.png" />
+    <Content Include="img\ManufacturerImages\peugeot.png" />
+    <Content Include="img\ManufacturerImages\plymouth.png" />
+    <Content Include="img\ManufacturerImages\polaris.png" />
+    <Content Include="img\ManufacturerImages\polestar.png" />
+    <Content Include="img\ManufacturerImages\pontiac.png" />
+    <Content Include="img\ManufacturerImages\porsche.png" />
+    <Content Include="img\ManufacturerImages\proto_motors.png" />
+    <Content Include="img\ManufacturerImages\radical_sportcars.png" />
+    <Content Include="img\ManufacturerImages\ram.png" />
+    <Content Include="img\ManufacturerImages\reliant.png" />
+    <Content Include="img\ManufacturerImages\renault.png" />
+    <Content Include="img\ManufacturerImages\rimac.png" />
+    <Content Include="img\ManufacturerImages\rolls_royce.png" />
+    <Content Include="img\ManufacturerImages\rossion.png" />
+    <Content Include="img\ManufacturerImages\rover.png" />
+    <Content Include="img\ManufacturerImages\ruf.png" />
+    <Content Include="img\ManufacturerImages\saab.png" />
+    <Content Include="img\ManufacturerImages\saleen.png" />
+    <Content Include="img\ManufacturerImages\saturn.png" />
+    <Content Include="img\ManufacturerImages\scion.png" />
+    <Content Include="img\ManufacturerImages\seat.png" />
+    <Content Include="img\ManufacturerImages\shelby.png" />
+    <Content Include="img\ManufacturerImages\smart.png" />
+    <Content Include="img\ManufacturerImages\spada.png" />
+    <Content Include="img\ManufacturerImages\spania_gta.png" />
+    <Content Include="img\ManufacturerImages\spectre.png" />
+    <Content Include="img\ManufacturerImages\spyker.png" />
+    <Content Include="img\ManufacturerImages\srt.png" />
+    <Content Include="img\ManufacturerImages\ssc.png" />
+    <Content Include="img\ManufacturerImages\subaru.png" />
+    <Content Include="img\ManufacturerImages\sunbeam.png" />
+    <Content Include="img\ManufacturerImages\suzuki.png" />
+    <Content Include="img\ManufacturerImages\talbot.png" />
+    <Content Include="img\ManufacturerImages\tamo.png" />
+    <Content Include="img\ManufacturerImages\tesla_motors.png" />
+    <Content Include="img\ManufacturerImages\toyota.png" />
+    <Content Include="img\ManufacturerImages\triumph.png" />
+    <Content Include="img\ManufacturerImages\tvr.png" />
+    <Content Include="img\ManufacturerImages\ultima.png" />
+    <Content Include="img\ManufacturerImages\vauxhall.png" />
+    <Content Include="img\ManufacturerImages\volkswagen.png" />
+    <Content Include="img\ManufacturerImages\volvo.png" />
+    <Content Include="img\ManufacturerImages\wiesmann.png" />
+    <Content Include="img\ManufacturerImages\w_motors.png" />
+    <Content Include="img\ManufacturerImages\zenvo.png" />
+    <Content Include="img\no_image.png" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.esm.js" />
+    <Content Include="js\bootstrap.esm.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\dark-mode.js" />
+    <Content Include="js\jquery-3.5.1.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\tippy-bundle.umd.min.js" />
+    <Content Include="js\_custom.js" />
+    <Content Include="Payment.aspx" />
+    <Content Include="RecoverPassword.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Take.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCar.aspx.cs">
+      <DependentUpon>AddCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCar.aspx.designer.cs">
+      <DependentUpon>AddCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddColor.aspx.cs">
+      <DependentUpon>AddColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddColor.aspx.designer.cs">
+      <DependentUpon>AddColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGarage.aspx.cs">
+      <DependentUpon>AddGarage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGarage.aspx.designer.cs">
+      <DependentUpon>AddGarage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGeneration.aspx.cs">
+      <DependentUpon>AddGeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGeneration.aspx.designer.cs">
+      <DependentUpon>AddGeneration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddManufacturer.aspx.cs">
+      <DependentUpon>AddManufacturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddManufacturer.aspx.designer.cs">
+      <DependentUpon>AddManufacturer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddModel.aspx.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddModel.aspx.designer.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTier.aspx.cs">
+      <DependentUpon>AddTier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTier.aspx.designer.cs">
+      <DependentUpon>AddTier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarView.aspx.cs">
+      <DependentUpon>CarView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarView.aspx.designer.cs">
+      <DependentUpon>CarView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswword.aspx.cs">
+      <DependentUpon>ForgotPasswword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswword.aspx.designer.cs">
+      <DependentUpon>ForgotPasswword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralLayoutMaster.Master.cs">
+      <DependentUpon>GeneralLayoutMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralLayoutMaster.Master.designer.cs">
+      <DependentUpon>GeneralLayoutMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Take.aspx.cs">
+      <DependentUpon>Take.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Take.aspx.designer.cs">
+      <DependentUpon>Take.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="css\bootstrap-utilities.css.map" />
+    <Content Include="css\bootstrap-utilities.min.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\bootstrap.rtl.css.map" />
+    <Content Include="css\bootstrap.rtl.min.css.map" />
+    <Content Include="img\manufacturers\bmw.webp" />
+    <Content Include="img\manufacturers\dodge.webp" />
+    <Content Include="img\manufacturers\koenigsegg.webp" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.esm.js.map" />
+    <Content Include="js\bootstrap.esm.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="GeneralLayoutMaster.Master" />
+    <Content Include="AdminMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="ReadMe.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52913</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
